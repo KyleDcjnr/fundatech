@@ -44,6 +44,11 @@ const Nav = () => {
             <img src="/images/logo-colored.svg" alt="funda technology logo" />
           </NavLink>
         </li>
+        <li className={Styles.menu}>
+          <NavLink to = "/">
+          <img src="./public/images/menu.png"/>
+          </NavLink>
+        </li>
         <li className={Styles.navItems}>
 
           <ul>

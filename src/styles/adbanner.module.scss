@@ -10,12 +10,14 @@
 }
 
 .contacts{
-    width: 40%;
+    width: 50%;
+    background-color: pink;
     display: flex;
-    justify-content: space-aroun;
+    justify-content: space-around;
     font-family: vars.$fontsans;
-    p{
-        width: 100%;
+    a{
+        // width: 100%;
+        background-color: aqua;
         display: inline-flex;
         justify-content: flex-start;
         align-items: center;
@@ -29,12 +31,18 @@
         color: #fff;
         font-size: 1rem       ;
     }
+    @media #{vars.$media-mobile-s}{
+        width: 50%;
+        justify-content: none;
+        gap: 5%;
+    }
 }
 
 .social{
-    width: 20%;
+    width: 50%;
+    background-color: green;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     li a{
         color: #fff;
@@ -44,7 +52,9 @@
             color: vars.$base;
         }
     }
-    @media #{vars.$media-mobile-s}{
-        width: 100%;
+    @media #{vars.$media-mobile-m}{
+        width: 50%;
+        justify-content: none;
+        gap: 5%;
     }
 }

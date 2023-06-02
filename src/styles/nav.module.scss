@@ -3,6 +3,7 @@
 
 
 .navWrapper{
+    background-color: green;
     width: 100%;
     height: auto;
     display: grid;
@@ -18,10 +19,14 @@
             width: 60%;
         }
     }
+    @media #{vars.$media-mobile-l}{
+        width: 100vw
+    }
 }
 
 .logo{
     margin-right: 50px;
+    // background-color: aliceblue;
 }
 
 
@@ -36,12 +41,28 @@
         font-family: vars.$fontsans;
         font-size: .86rem;
     }
+    @media #{vars.$media-mobile-l}{
+        display: none;
+    }
 }
 
 .logo a img{
     max-width: 100px;
 }
-
+.menu{
+    position: relative;
+    top: 0%;
+    right: -45%
+}
+.menu a img{
+    max-width: 45px;
+    // background-color: aquamarine;
+    display: none;
+    @media #{vars.$media-mobile-l}{
+        display: flex;
+        float: right;
+    }
+}
 
 .navWrapper ul .cta{
     display: flex;
