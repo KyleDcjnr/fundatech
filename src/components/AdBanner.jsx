@@ -7,7 +7,8 @@ const AdBanner = () => {
             <div className={Styles.contacts}>
                 <p><span><FaPhone /></span>+234 807 265 8726</p>
                 <p><span><FaPhone /></span>+234 803 472 0852</p>
-                <p><span><FaEnvelope /></span>Fundapaints@yahoo.com</p>
+                <a href="mailto:Fundapaints@yahoo.com"><span><FaEnvelope /></span></a>
+                {/* <a><span><FaEnvelope /></span>Fundapaints@yahoo.com</a> */}
             </div>
             <ul className={Styles.social}>
               <li>

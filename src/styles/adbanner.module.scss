@@ -25,6 +25,10 @@
     p span{
         margin-right: 10px;
     }
+    a{
+        color: #fff;
+        font-size: 1rem       ;
+    }
 }
 
 .social{
@@ -39,5 +43,8 @@
         &:hover{
             color: vars.$base;
         }
+    }
+    @media #{vars.$media-mobile-s}{
+        width: 100%;
     }
 }
